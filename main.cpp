@@ -20,6 +20,8 @@ int main() {
 	PNM<pnm::monochrome_t> pbm{3, 2};
 
 	pbm(0,0, {255, 0,   0}); // since bits aren't addressable you will use a different syntax
+	
+	// every pixel is converted to black or white after a grayscale conversion see here: https://github.com/Manu-sh/pnm/blob/master/include/pnm/pixels/monochrome.hpp#L15
 	pbm(0,1, {0,   255, 0});
 	pbm(0,2, {0,   255, 0});
 

@@ -16,7 +16,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 )
 
 include(FetchContent)
-FetchContent_Declare(pnm GIT_REPOSITORY https://github.com/Manu-sh/pnm.git)
+# you can also pick a particular commit es. FetchContent_Declare(pnm GIT_REPOSITORY https://github.com/Manu-sh/pnm.git GIT_TAG dc77ee3c1e0c075a334d7834eb7ba9c17c4dddbf)
+FetchContent_Declare(pnm GIT_REPOSITORY https://github.com/Manu-sh/pnm.git) 
 FetchContent_MakeAvailable(pnm)
 
 # add & link pnm
