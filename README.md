@@ -1,4 +1,4 @@
-# example-pnm
+# example-opnm
 Example of to embed and use the [opnm library](https://github.com/Manu-sh/opnm) with cmake
 
 ```bash
