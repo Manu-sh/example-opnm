@@ -16,12 +16,12 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 )
 
 include(FetchContent)
-# you can also pick a particular commit es. FetchContent_Declare(pnm GIT_REPOSITORY https://github.com/Manu-sh/pnm.git GIT_TAG bcbac67f8793585b4cde1e10a963aaa943015823)
-FetchContent_Declare(pnm GIT_REPOSITORY https://github.com/Manu-sh/pnm.git) 
-FetchContent_MakeAvailable(pnm)
+# you can also pick a particular commit es. FetchContent_Declare(opnm GIT_REPOSITORY https://github.com/Manu-sh/opnm.git GIT_TAG 41322ddef0feb4f7edec96c0adb86840723914bb)
+FetchContent_Declare(opnm GIT_REPOSITORY https://github.com/Manu-sh/opnm.git) 
+FetchContent_MakeAvailable(opnm)
 
 # add & link pnm
-target_link_libraries(${PROJECT_NAME} PRIVATE pnm)
+target_link_libraries(${PROJECT_NAME} PRIVATE opnm)
 
 target_compile_options(${PROJECT_NAME} PRIVATE
         -O3
