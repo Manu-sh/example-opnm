@@ -5,6 +5,6 @@ Example of to embed and use the [opnm library](https://github.com/Manu-sh/opnm) 
 git clone https://github.com/Manu-sh/example-opnm.git
 mkdir build
 cd build
-cmake ..
+cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j`nproc --all`
 ```

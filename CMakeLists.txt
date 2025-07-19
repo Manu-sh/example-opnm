@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD          17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(NOT CMAKE_BUILD_TYPE)
-    # set(CMAKE_BUILD_TYPE Release)
-    set(CMAKE_BUILD_TYPE Debug) # keep assertion() on
+    set(CMAKE_BUILD_TYPE Release)
+    #set(CMAKE_BUILD_TYPE Debug) # keep assertion() on
 endif()
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/main.cpp)
